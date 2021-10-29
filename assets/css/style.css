@@ -1,0 +1,8 @@
+.top-navbar .uk-navbar-item,
+.top-navbar .uk-navbar-nav>li>a,
+.top-navbar .uk-navbar-toggle {
+    min-height: 40px;
+}
+ .logo{
+   height: 48px
+ }

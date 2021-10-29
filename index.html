@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/css/uikit.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <div class="uk-offcanvas-content">
+    <header>
+      <div class="uk-visible@m tm-toolbar-container uk-background-secondary	top-navbar">
+        <div class="uk-container uk-navbar " uk-navbar="">
+          <div class="uk-navbar-left">
+            <nav>
+              <ul class="uk-navbar-nav ">
+                <li>
+                  <a href="#">
+                    <span class="uk-margin-xsmall-right uk-icon" uk-icon="icon: receiver; ratio: .75;"></span>
+                    <span class="tm-pseudo">8 800 799 99 99</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="contacts.html" onclick="return false">
+                    <span class="uk-margin-xsmall-right uk-icon" uk-icon="icon: location; ratio: .75;"></span>
+                    <span class="tm-pseudo">Store in St. Petersburg</span>
+                    <span uk-icon="icon: triangle-down; ratio: .75;" class="uk-icon"></span>
+                  </a>
+                  <div class="uk-margin-remove uk-drop" uk-drop="mode: click; pos: bottom-center;">
+                    <div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+
+                      <div class="uk-card-body">
+                        <div class="uk-text-small">
+                          <div class="uk-text-bolder">Store Name</div>
+                          <div>St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28</div>
+                          <div>Daily 10:00–22:00</div>
+                        </div>
+                        <div class="uk-margin-small">
+                          <a class="uk-link-muted uk-text-uppercase tm-link-to-all uk-link-reset" href="contacts.html">
+                            <span>contacts</span>
+                            <span uk-icon="icon: chevron-right; ratio: .75;" class="uk-icon"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="uk-navbar-right">
+            <nav>
+              <ul class="uk-navbar-nav">
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="uk-navbar-container uk-navbar-transparent uk-sticky" uk-sticky="cls-active: tm-navbar-container-fixed">
+        <div class="uk-container uk-navbar" uk-navbar="">
+          <div class="uk-navbar-left">
+            <button class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon" uk-toggle="target: #nav-offcanvas" uk-navbar-toggle-icon="">
+            </button>
+            <a class="uk-navbar-item uk-logo" href="index.html">
+              <img src="assets/images/logo.svg" height="40" class="logo" alt="Logo">
+            </a>
+            <nav class="uk-visible@m">
+              <ul class="uk-navbar-nav">
+                <li><a href="#">Авто</a></li>
+                <li><a href="#">Недвижимость</a></li>
+                <li><a href="#">Работа</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="uk-navbar-right">
+
+            <a class="uk-navbar-item uk-link-muted tm-navbar-button uk-icon" href="account.html" uk-icon="user"></a>
+
+            <div class="uk-padding-small uk-margin-remove uk-dropdown" uk-dropdown="pos: bottom-right; offset: -10; delay-hide: 200;" style="min-width: 150px;">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li>
+                  <a href="#">Orders<span>(2)</span></a>
+                </li>
+                <li>
+                  <a href="#">Favorites<span>(3)</span></a>
+                </li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </div>
+            <button class="uk-button uk-button-primary">Разместить объявление</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <script src="assets/js/uikit.js"></script>
+  <script src="assets/js/uikit-icons.js"></script>
+</body>
+
+</html>
