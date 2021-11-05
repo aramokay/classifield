@@ -1,8 +1,214 @@
+:root {
+  --theme-primary: #1976d2;
+  --theme-white: #fff;
+  --theme-on-primary: #fff;
+  --theme-secondary: #e91e63;
+  --theme-on-secondary: #fff;
+  --theme-background: #fafafa;
+}
+body{
+  background-color: var(--theme-background)
+}
+
+/* Margins */
+.mt-30{
+  margin-top: 30px;
+}
+.mt-25{
+  margin-top: 25px;
+}
+.mb-30{
+  margin-bottom: 30px !important;
+}
+.mb-25{
+  margin-bottom: 25px !important;
+}
+.mbt-30{
+  margin-bottom: 30px !important;
+  margin-top: 23px !important;
+}
+.mbt-25{
+  margin-bottom: 25px !important;
+  margin-top: 25px !important;
+}
+.p-30{
+  padding: 30px
+}
+.p-25{
+  padding: 25px
+}
+/* End margins */
+
+
 .top-navbar .uk-navbar-item,
 .top-navbar .uk-navbar-nav>li>a,
 .top-navbar .uk-navbar-toggle {
-    min-height: 40px;
 }
+.top-navbar .uk-navbar-nav>li>a{
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-transform: inherit;
+  line-height: 2.1rem;
+  min-height: auto
+}
+
+.btn{
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  justify-content: center;
+  padding: 0.1rem 1.5rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+
+.main-navbar{
+  background: var(--theme-white) !important
+}
+header{
+      box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.homeSearch{
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: var(--mdc-theme-surface, #fff);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+
  .logo{
    height: 48px
  }
+
+ .bg-purple{
+   background: #8C489F;
+   color: #fff;
+ }
+ .bg-purple a{
+   color: #fff !important;
+ }
+
+
+
+/*adv Card*/
+.adv-card{
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: var(--mdc-theme-surface, #fff);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.adv-card-thumbnail{
+  position: relative;
+}
+.adv-card-status{
+  position: absolute;
+  z-index: 2
+}
+.adv-card-status span{
+  padding: 3px 6px;
+  margin: 4px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #01579B;
+}
+.adv-card-status span.status-sale{
+  background: green
+}
+.adv-content-wrapper{
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 16px;
+}
+.adv-content-title{
+  font-size: 18px;
+  line-height: 1.1rem;
+  font-weight: bold;
+}
+.adv-card:hover .adv-content-title a{
+  color: var(--theme-primary);
+}
+.adv-content-title a{
+  transition: 0.2s;
+  text-decoration: none;
+  color: var(--theme-base-color);
+}
+.adv-content-price-more{
+  display: flex;
+  justify-content: space-between;
+}
+
+.adv-content-address{
+  font-style: italic;
+  margin: 5px 0 10px 0;
+  display: flex;
+  align-items: center;
+  color: var(--theme-text-secondary-on-background) !important;
+  font-weight: 500;
+  font-size: 12px
+}
+.adv-content-location img{
+  height: 14px;
+}
+.adv-content-price{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: var(--theme-primary) !important;
+}
+.adv-content-more-btn{
+  border-radius: 4px;
+  border:1px solid var(--theme-primary);
+  padding: 3px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 300ms;
+}
+.adv-content-more-btn:hover{
+  text-decoration: none;
+}
+
+
+/*End adv Card*/
+
+/*Search Form */
+
+.search-box input, .search-box select{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 8px 15px;
+    background: none;
+    color: #1a3b5d;
+    background: #fff;
+}
+
+.search-box input:hover, .search-box input:focus {
+    border-color: #3d9cff;
+}
+
+.search-box input:focus {
+    box-shadow: 0px 10px 20px -13px rgb(32 56 117 / 35%);
+}
+
+
+/*End Search Form */
