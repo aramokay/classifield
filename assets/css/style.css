@@ -1,5 +1,6 @@
 :root {
   --theme-primary: #1976d2;
+  --theme-primary-dark: #411057;
   --theme-white: #fff;
   --theme-on-primary: #fff;
   --theme-secondary: #e91e63;
@@ -83,6 +84,17 @@ header{
   background-color: #fff;
   background-color: var(--mdc-theme-surface, #fff);
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  transition: 600ms
+}
+
+.homeSearch.uk-sticky-fixed{
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  transition: 600ms
+}
+.homeSearch.uk-sticky-fixed .p-25{
+  padding: 15px !important
 }
 
 
@@ -209,6 +221,82 @@ header{
 .search-box input:focus {
     box-shadow: 0px 10px 20px -13px rgb(32 56 117 / 35%);
 }
-
-
 /*End Search Form */
+
+.car-brands{
+  margin-left: -10px
+}
+.car-brands .car-brand{
+  background: #e5e5e5;
+  margin: 10px;
+  padding: 12px;
+  background: #e5e5e5;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+  width: 80px;
+}
+.car-brands .car-brand strong{
+  display: block;
+  text-align:center;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #222
+}
+.car-brands .car-brand:hover {
+  color: #444;
+  box-shadow: 0  0 2px var(--theme-primary-dark);
+  text-decoration: none;
+}
+
+.car-models-letters a{
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: var(--theme-primary-dark);
+  transition: 200ms
+}
+.car-models-letters a:hover{
+  color: var(--theme-secondary);
+  text-decoration:overline;
+}
+.car-model-letter{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 15px;
+  padding-top: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme-primary-dark);
+  transition: 200ms
+}
+.car-model-letter:hover{
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme-primary-dark);
+  transition: 200ms
+}
+
+
+.car-models .car-model{
+  background: #e5e5e5;
+  margin: 10px;
+  padding: 12px;
+  background: #e5e5e5;
+  width: 120px;
+}
+.car-models .car-model strong{
+  display: block;
+  text-align:center;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #222
+}
+.car-models .car-model:hover {
+  color: #444;
+  box-shadow: 0  0 2px var(--theme-primary-dark);
+  text-decoration: none;
+}
